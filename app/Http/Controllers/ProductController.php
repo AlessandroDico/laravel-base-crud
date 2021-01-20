@@ -13,9 +13,16 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('product.index');
+    public function index() {
+
+        $allProducts = Product::all();
+
+        // dd($allProducts);
+        $data = [
+            'products' => $allProducts,
+        ];
+
+        return view('product.index', $data);
     }
 
     /**
