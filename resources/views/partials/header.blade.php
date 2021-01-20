@@ -11,7 +11,7 @@
                     <a class="nav-link {{ Request::route()->getName() == 'homePage' ? 'active' : '' }}" href="{{ route('homePage') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::route()->getName() == 'products.index' ? 'active' : '' }}" href="{{ route('products.index') }}">Products</a>
+                    <a class="nav-link {{ Request::route()->getName() == 'product.index' ? 'active' : '' }}" href="{{ route('product.index') }}">Products</a>
                 </li>
 
             </ul>

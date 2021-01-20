@@ -26,7 +26,7 @@
                                 Price :
                                 {{ $product->price}} €
                             </h6>
-                            <a href="#" class="card-link">Show more</a>
+                            <a href="{{ route('product.show', ['product' => $product->id]) }}" class="card-link">Show more</a>
                         </div>
                     </div>
                 </div>
