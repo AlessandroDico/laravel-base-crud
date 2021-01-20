@@ -11,9 +11,11 @@
                     <a class="nav-link {{ Request::route()->getName() == 'homePage' ? 'active' : '' }}" href="{{ route('homePage') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::route()->getName() == 'product.index' ? 'active' : '' }}" href="{{ route('product.index') }}">Products</a>
+                    <a class="nav-link
+                    {{ Request::route()->getName() == 'product.index' ? 'active' : '' }}
+                    {{ Request::route()->getName() == 'product.show' ? 'active' : '' }}"
+                    href="{{ route('product.index') }}">Products</a>
                 </li>
-
             </ul>
             <form class="form-inline my-2 my-md-0">
                 <input class="form-control" type="text" placeholder="Search" aria-label="Search">
