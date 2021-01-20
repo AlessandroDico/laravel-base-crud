@@ -55,11 +55,15 @@ class ProductController extends Controller
     public function show($id) {
         $singleItem = Product::find($id);
 
-        $data = [
-            'item' => $singleItem,
-        ];
+        if ($singleItem) {
+            $data = [
+                'item' => $singleItem,
+            ];
 
-        return view('product.show', $data);
+            return view('product.show', $data);
+        } else {
+            abort(404);
+        }
     }
 
     /**

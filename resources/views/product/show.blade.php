@@ -30,7 +30,8 @@
                         </h6>
                         <h6 class="card-subtitle mb-2 text-muted">
                             Length :
-                            {{ $item->length ? $item->length : 'N.D' }}
+                            {{-- {{ $item->length ? $item->length : 'N.D' }} --}}
+                            {{ $item->length ?? 'N.D' }}
                         </h6>
                         <h6 class="card-subtitle mb-2 text-muted">
                             Price :
