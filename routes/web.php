@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('homePage');
+Route::get('/', 'HomeController@index')->name('homePage');
 
 Route::resource('/product','ProductController');
