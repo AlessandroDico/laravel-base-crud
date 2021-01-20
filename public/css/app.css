@@ -10944,6 +10944,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-color: #928a27;
+}
+
 .card {
   margin: 35px 0;
 }
