@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <p>{{ $products[0]->brand }}</p>
-    </body>
-</html>
+@extends ('layouts.app')
+
+@section ('content')
+    <p>{{ $products[0]->brand }}</p>
+@endsection
