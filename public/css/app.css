@@ -10944,3 +10944,7 @@ a.text-dark:focus {
   }
 }
 
+.card {
+  margin: 35px 0;
+}
+

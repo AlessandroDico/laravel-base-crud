@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 })->name('homePage');
 
-Route::resource('/product','ProductController');
+Route::resource('/products','ProductController');
