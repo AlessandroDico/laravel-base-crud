@@ -43,8 +43,24 @@ class ProductController extends Controller
      */
     public function store(Request $request) {
 
-        dd($request);
-        // return 'hello';
+        $data = $request->all();
+
+        $newProduct = new Product();
+        // $newProduct->brand = $request->brand;
+
+        $newProduct->brand = $data['brand'];
+        $newProduct->fabric = $data['fabric'];
+        $newProduct->color = $data['color'];
+        $newProduct->size = $data['size'];
+        $newProduct->length = $data['length'];
+        $newProduct->model = $data['model'];
+        $newProduct->price = $data['price'];
+
+        $newProduct->save();
+
+        // dd($newProduct->brand);
+        // dd($data);
+
     }
 
     /**
