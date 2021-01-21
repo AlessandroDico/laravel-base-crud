@@ -43,7 +43,6 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos accusantium porro ratione repellat reprehenderit natus a dignissimos fugit mollitia culpa? Accusantium earum error facilis tempore nisi, quidem animi incidunt at aut. Omnis laudantium rerum velit, praesentium possimus! Laboriosam, ratione, quaerat!
                         </p>
-                        <a href="#" class="card-link">Buy now</a>
                     </div>
                 </div>
             </div>
