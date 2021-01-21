@@ -44,21 +44,29 @@ class ProductController extends Controller
     public function store(Request $request) {
 
         $data = $request->all();
+        // passandolo in ->all() mi crea un array con elementi in chiave=>valore dei dati passati dal form
 
         $newProduct = new Product();
         // $newProduct->brand = $request->brand;
 
-        $newProduct->brand = $data['brand'];
-        $newProduct->fabric = $data['fabric'];
-        $newProduct->color = $data['color'];
-        $newProduct->size = $data['size'];
-        $newProduct->length = $data['length'];
-        $newProduct->model = $data['model'];
-        $newProduct->price = $data['price'];
+// PRIMO METODO SCRIVENDO TUTTO "A MANO"
+
+        // $newProduct->brand = $data['brand'];
+        // $newProduct->fabric = $data['fabric'];
+        // $newProduct->color = $data['color'];
+        // $newProduct->size = $data['size'];
+        // $newProduct->length = $data['length'];
+        // $newProduct->model = $data['model'];
+        // $newProduct->price = $data['price'];
+        // $newProduct->save();
+
+// SECONDO METODO CON FILL
+// per usare al meglio fill devo dirgli quali dati prendere in considerazione e questo lo faccio nel model
+        $newProduct->fill($data);
 
         $newProduct->save();
 
-        // dd($newProduct->brand);
+        // dd($newProduct->fill($data));
         // dd($data);
 
     }
