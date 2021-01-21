@@ -62,12 +62,14 @@ class ProductController extends Controller
 
 // SECONDO METODO CON FILL
 // per usare al meglio fill devo dirgli quali dati prendere in considerazione e questo lo faccio nel model
+
         $newProduct->fill($data);
 
         $newProduct->save();
 
         // dd($newProduct->fill($data));
         // dd($data);
+        return redirect()->route('product.index');
 
     }
 
