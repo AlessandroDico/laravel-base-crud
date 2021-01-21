@@ -32,6 +32,9 @@
                 </div>
             @endforeach
         </div>
+        <a href="{{ route('product.create') }}" class="link-add-product">
+            <button type="button" name="button" class="btn btn-lg btn-primary">Add new product</button>
+        </a>
     </div>
 @endsection
 
