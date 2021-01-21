@@ -31,6 +31,8 @@
                         <h6 class="card-subtitle mb-2 text-muted">
                             Length :
                             {{-- {{ $item->length ? $item->length : 'N.D' }} --}}
+
+                             {{-- null coalescing operator --}}
                             {{ $item->length ?? 'N.D' }}
                         </h6>
                         <h6 class="card-subtitle mb-2 text-muted">
