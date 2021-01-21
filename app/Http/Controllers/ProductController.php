@@ -31,7 +31,7 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create() {
-        
+
         return view('product.create');
     }
 
@@ -41,9 +41,10 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request) {
+
+        dd($request);
+        // return 'hello';
     }
 
     /**
