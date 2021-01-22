@@ -2,6 +2,10 @@
     margin: 35px 0;
 }
 
-a.link-add-product {
+a.link-add-product, a.link-update {
     display: inline-block;
+}
+
+a.link-update {
+    margin-left: 20px;
 }

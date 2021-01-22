@@ -99,9 +99,13 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
+    public function edit($id) {
+
+        $item = Product::find($id);
+        // dd($item);
+        $data = ['item' => $item];
+
+        return view('product.edit', $data);
     }
 
     /**
@@ -111,9 +115,9 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
+    public function update(Request $request, $id) {
+
+        return ('hello');
     }
 
     /**
