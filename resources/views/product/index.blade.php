@@ -8,25 +8,30 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                {{ $product->brand}}
+                                {{ $product->brand }}
                             </h5>
                             <h6 class="card-subtitle mb-2 text-muted">
                                 Model :
-                                {{ $product->model}}
+                                {{ $product->model }}
                             </h6>
                             <h6 class="card-subtitle mb-2 text-muted">
                                 Fabric :
-                                {{ $product->fabric}}
+                                {{ $product->fabric }}
                             </h6>
                             <h6 class="card-subtitle mb-2 text-muted">
                                 Color :
-                                {{ $product->color}}
+                                {{ $product->color }}
                             </h6>
                             <h6 class="card-subtitle mb-2 text-muted">
                                 Price :
-                                {{ $product->price}} €
+                                {{ $product->price }} €
                             </h6>
                             <a href="{{ route('product.show', ['product' => $product->id]) }}" class="card-link">Show more</a>
+                            <a href="{{ route('product.edit', ['product' => $product->id ]) }}" class="link-update">
+                                <button type="button" class="text-uppercase btn btn-success">
+                                    Update
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
