@@ -117,7 +117,15 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id) {
 
-        return ('hello');
+        $data = $request->all();
+
+        // dd($data);
+
+        $updateItem = Product::find($id);
+
+        $updateItem->update($data);
+
+        return redirect()->route('product.index');
     }
 
     /**
