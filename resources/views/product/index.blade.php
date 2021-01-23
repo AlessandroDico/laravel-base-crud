@@ -32,6 +32,12 @@
                                     Update
                                 </button>
                             </a>
+                            <form method="post" class="d-inline"
+                                action="{{ route('product.destroy', ['product' => $product->id]) }}">
+                                @csrf
+                                @method ('DELETE')
+                                <button type="submit" class="text-uppercase btn btn-danger">Delete</button>
+                            </form>
                         </div>
                     </div>
                 </div>
